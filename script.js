@@ -100,5 +100,3 @@ function scollActive() {
 }
 
 window.addEventListener("scroll", scollActive)
-
-
