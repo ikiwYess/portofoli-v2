@@ -12,12 +12,12 @@
 :root {
     --body-color : rgba(250,250,250);
     --color-white : rgba(250,250,250);
-    --text-color-second : rgba(38,37,37);
+    --text-color-second : rgb(75, 75, 75);
     --first-color : #ffda55;
     --first-shadow : rgba(0, 0, 0, 0.1);
 
     --box-color: #fff;
-    --nav-color: #fff;
+    --nav-color: #ffffff5d;
     --nav-icon: #000;
     --logo-color: #000;
 
@@ -35,10 +35,10 @@ body {
 /* dark mode */
 
 body.dark {
-    --body-color: #202425;
+    --body-color: #333;
     --box-color: #fff;
 
-    --nav-color: #262425;
+    --nav-color: #3434;
     --color-white: #fff;
     --text-color: #fff;
 
@@ -63,14 +63,13 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    background: var(--nav-color);
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background: var(--nav-color);
     padding-inline: 10vw;
     z-index: 10;
     transition: 0.3s;
-    border-bottom: 1px solid #000;
 }
 
 .nav-logo {
@@ -124,9 +123,14 @@ nav {
     left: 50%;
     bottom: -15px;
     transform: translate(-50%, -50%);
-    width: 50px;
+    width: 0;
     height: 2px;
+    transition: all 0.5s ease;
     background-color: var(--first-color);
+}
+
+.active-link:hover::after {
+    width: 50px;
 }
 
 /* mode */
@@ -332,7 +336,7 @@ i {
     height: 400px;
     object-fit: cover;
     background-blend-mode: darken;
-    background: rgba(0, 0, 0, 0.7) url(img1.jfif);
+    background: rgba(0, 0, 0, 0.7) url(foto.jpg);
 }
 
 @keyframes imgFloat {
@@ -351,7 +355,7 @@ i {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 50%;
+    gap: 20%;
 }
 
 .col {
@@ -388,7 +392,6 @@ i {
 .about-me * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all 0.25s ease;
 }
 
 .about-info figcaption {
@@ -857,4 +860,8 @@ footer {
     .mode {
         margin-left: 50%;
     }
+
+    /* .row {
+        gap: 10%;
+    } */
 }
