@@ -515,6 +515,7 @@ i {
     color: var(--text-color);
 }
 
+/* Default Styles */
 .project-showcase {
     padding: 40px;
     text-align: center;
@@ -522,6 +523,8 @@ i {
 
 .projects-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-card {
@@ -904,20 +907,18 @@ footer {
     .mode {
         display: flex;
         align-items: center;
-        margin-left: 60%;
-    }
-    .project-container {
-        flex-direction: column;
+        margin-left: 40%;
     }
 
     .projects-container {
-        flex-direction: column; /* Mengubah arah flex ke kolom */
-        align-items: center; /* Mengatur item ke tengah */
+        flex-direction: row;
+        justify-content: center;
     }
 
     .project-card {
-        width: 90%; /* Mengambil 90% lebar layar */
-        max-width: 100%; /* Pastikan tidak melebihi lebar layar */
+        flex: 1 1 45%; /* Kartu akan mengisi sekitar 45% dari kontainer */
+        max-width: 45%; /* Menjamin dua kartu per baris */
+        margin: 10px;
     }
 }
 
@@ -943,16 +944,14 @@ footer {
         margin-left: 50%;
     }
 
-    .project-card img {
-        height: 150px; /* Mengurangi tinggi gambar agar sesuai dengan layar kecil */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .project-card h3 {
-        font-size: 1rem; /* Mengurangi ukuran font */
+    .project-card {
+        flex: 1 1 100%; /* Kartu akan memenuhi lebar penuh */
+        max-width: 100%; /* Setiap kartu mengambil full width */
+        margin: 10px 0;
     }
-
-    .project-card p {
-        font-size: 0.8rem; /* Mengurangi ukuran font */
-    }
-
 }
