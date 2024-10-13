@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <nav id="header">
@@ -21,16 +26,15 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list"></li>
-                        <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
                     </li>
                     <li class="nav_list"></li>
-                        <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
                         <div class="circle"></div>
-                        <li class="nav_list">
-                            <a href="#contact" class="nav-link">Contact</a>
-                            <div class="circle"></div>
-                        </li>
                     </li>
                 </ul>
             </div>
@@ -44,7 +48,6 @@
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
             </div>
         </nav>
-
         <!-- main -->
 
         <main class="wrapper">
@@ -73,12 +76,12 @@
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="img1.jfif" alt="">
+                        <img src="foto.jpg" alt="">
                     </div>
                 </div>
             </section>
             <!-- about box -->
-             <section class="section" id="about">
+            <section class="section" id="about">
                 <div class="top-header">
                     <h1>About me</h1>
                 </div>
@@ -88,7 +91,7 @@
                         <div class="about-info">
                             <figure class="about-me">
                                 <figcaption>
-                                    <img src="img1.jfif" alt="" class="profile" />
+                                    <img src="foto.jpg" alt="" class="profile" />
                                     <h2>Web development</h2>
                                     <p>My name is Rizky! I,m a web development with 6+ month of experience</p>
                                 </figcaption>
@@ -105,41 +108,41 @@
                                 </span>
                             </div>
                         </div>
-                            <div class="skill-box">
-                                <span class="title">CSS</span>
-                                <div class="skill-bar css">
-                                    <span class="skill-per">
-                                        <span class="tooltip">80%</span>
-                                    </span>
-                                </div>
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar css">
+                                <span class="skill-per">
+                                    <span class="tooltip">80%</span>
+                                </span>
                             </div>
-                                <div class="skill-box">
-                                    <span class="title">Python</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-per python">
-                                            <span class="tooltip">33%</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                    <div class="skill-box">
-                                        <span class="title">JavaScript</span>
-                                        <div class="skill-bar">
-                                            <span class="skill-per javascript">
-                                                <span class="tooltip">60%</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="skill-box">
-                                        <span class="title">PHP</span>
-                                        <div class="skill-bar">
-                                            <span class="skill-per php">
-                                            <span class="tooltip">30%</span>
-                                            </span>
-                                        </div>
-                                    </div>
-             </section>
-             <!-- project box -->
-              <section class="section" id="projects">
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Python</span>
+                            <div class="skill-bar">
+                                <span class="skill-per python">
+                                    <span class="tooltip">33%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">60%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">PHP</span>
+                            <div class="skill-bar">
+                                <span class="skill-per php">
+                                    <span class="tooltip">30%</span>
+                                </span>
+                            </div>
+                        </div>
+            </section>
+            <!-- project box -->
+            <section class="section" id="projects">
                 <div class="top-header">
                     <h1>Projects</h1>
                 </div>
@@ -160,9 +163,24 @@
                         <label>6+ month in web development</label>
                     </div>
                 </div>
-              </section>
-              <!-- contact box -->
-               <section class="section" id="contact">
+                <div class="project-showcase">
+                    <h2>Example Project</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="kaiAnime.jpg" alt="Project 1">
+                        <h3>KaiAnime</h3>
+                        <p>disini saya membuat website seperti Myanimelist(mal), saya mengunakan bahasa pemograman nodejs dan api yang disediakan oleh JIKAN</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="kaiFilm.jpg" alt="Project 2">
+                        <h3>kaiFilm</h3>
+                        <p>disini saya membuat website untuk mencari film yang sedang trending dan acara tv, saya menggunakan api yang disediakan oleh TMDB</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- contact box -->
+            <section class="section" id="contact">
                 <div class="top-header">
                     <h1>Let's Work Together</h1>
                     <span>Do you have a project in your mind, contact me here</span>
@@ -187,43 +205,26 @@
                             </div>
                             <div class="form-button">
                                 <button class="btn">Send<i class="uil uil-message"></i></button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-               </section>
+            </section>
         </main>
         <footer>
-            <div class="middle-footer">
-                <ul class="footer-menu">
-                    <li class="footer_menu_list">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer_menu_list"></li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer_menu_list"></li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="footer_menu_list"></li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
             <div class="footer-social-icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
-                <div class="icon"><i class="uil uil-twitter"></i></div>
-                <div class="icon"><i class="uil uil-youtube"></i></div>
-            </div>
-            <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Rizky</a> - All rights reserved 2024</p>
+                <div class="icon"><a href=""><i class="uil uil-instagram" style="color: black;"></i></a></div>
+                <div class="icon"><a href=""><i class="uil uil-github-alt" style="color: black;"></i></a></div>
+                <div class="icon"><a href=""><i class="uil uil-twitter" style="color: black;"></i></a></div>
+                <div class="icon"><a href=""><i class="uil uil-youtube" style="color: black;"></i></a></div>
             </div>
         </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
