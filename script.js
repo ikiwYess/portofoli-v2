@@ -24,6 +24,18 @@ toggleSwitch.addEventListener("click", () => {
     }
 });
 
+// nav burger
+
+const navMenuBtn = document.getElementById("navMenuBtn");
+const navMenu = document.getElementById("navMenu");
+
+navMenuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("responsive");
+    navMenuBtn.classList.toggle("active");
+});
+
+
+
 // typing effect
 
 var typingEffect = new Typed(".typedText", {
