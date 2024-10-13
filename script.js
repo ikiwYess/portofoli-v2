@@ -24,6 +24,7 @@ toggleSwitch.addEventListener("click", () => {
     }
 });
 
+
 // typing effect
 
 var typingEffect = new Typed(".typedText", {
@@ -79,7 +80,7 @@ srLeft.reveal(".contact-info", { delay: 100 });
 srLeft.reveal(".text-area", { delay: 230 });
 
 const srRight = ScrollReveal({
-    origin: "left",
+    origin: "right",
     distance: "80px",
     duration: 2000,
     reset: true,
@@ -106,7 +107,7 @@ function scollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document
-                .querySelector(".nav-menu a[href*=" + sectionId + sectionId + "]")
+                .querySelector(".nav-menu a[href*=" + sectionId + "]")
                 .classList.add("active-link")
         } else {
             document
